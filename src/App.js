@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import CharPicker from './components/CharPicker';
 import Character from './components/Character';
+import Grab from './components/Grab'
 
 const App = (props) => {
   // const [state, setState] = useState({
@@ -48,6 +49,7 @@ const App = (props) => {
       {chosenSide === 'dark' && (
         <button onClick={destructionHandler}>DESTROY!</button>
       )}
+      <Grab />
     </React.Fragment>
   );
 
